@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html>
     <head>
+
     </head>
     <body>
-        <form>
+        <form id="forma">
             <label>Ocena:</label>
-            <input type="text">
-            <br>
+            <input type="text" id="ocena">
+            <p class="error"></p>
             <br>
             <label>Broj indeksa:</label>
-            <input type="text">
+            <input type="text" id="brojIndeksa">
+            <p class="error"></p>
             <br>
             <br>
             <label>Redni broj izlazaka na ispit:</label>
-            <select>
+            <select id="rb">
                 <option>1</option>
                 <option>2</option>
                 <option>3</option>
@@ -22,26 +24,31 @@
             <br>
             <br>
             <label>Datum izlazaka na ispit:</label>
-            <input type="date">
+            <input type="date" id="datumIzlaska">
             <br>
             <br>
             <label>Rok:</label>
-            <input type="radio" name="radio" id="Januar">
+            <input type="radio" name="radio" id="Januar" value="Januar">
             <label for="Januar">Januar</label>
-            <input type="radio" name="radio" id="April">
+            <input type="radio" name="radio" id="April" value="April">
             <label for="April">April</label>
-            <input type="radio" name="radio" id="Jun">
+            <input type="radio" name="radio" id="Jun" value="Jun">
             <label for="Jun">Jun</label>
-            <input type="radio" name="radio" id="Septembar">
+            <input type="radio" name="radio" id="Septembar" value="Septembar">
             <label for="Septembar">Septembar</label>
             <br>
             <br>
-            <input type="checkbox" id="polozio">
-            <label for="polozio">Polozio/la</label>
+            <input type="checkbox" id="polozio"> <label for="polozio">Polozio/la</label>
+            <p class="error_1"></p>
             <br>
             <br>
-            <input type="button" value="Posalji">
+            <input type="button" value="Posalji" id="submitBtn">
 
         </form>
+        <br>
+        <label>Podaci forme</label>
+        <br>
+        <textarea id="text"></textarea>
+        <script src="index.js"></script>
     </body>
 </html>
